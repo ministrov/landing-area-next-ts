@@ -1,15 +1,23 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Crimson_Text, DM_Sans, Roboto_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const crimsonText = Crimson_Text({
+  weight: ["400"],
+  variable: "--font-crimson-text",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const dmSans = DM_Sans({
+  weight: ["400"],
+  variable: "--font-dm-sans",
   subsets: ["latin"],
+});
+
+const robotoMono = Roboto_Mono({
+  weight: ["400"],
+  variable: "--font-roboto-mono",
+  subsets: ["latin"]
 });
 
 export const metadata: Metadata = {
@@ -24,7 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${crimsonText.variable} ${dmSans.variable} ${robotoMono.variable}`}>
         {children}
       </body>
     </html>
