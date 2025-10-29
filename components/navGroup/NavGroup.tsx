@@ -3,7 +3,6 @@ import { headerLinks } from '@/helpers';
 import styles from "./NavGroup.module.css";
 
 export const NavGroup = () => {
-  console.log(headerLinks);
   return (
     <ul className={styles.list}>
       {headerLinks.map(link => (

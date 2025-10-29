@@ -9,9 +9,11 @@ export const Header = () => {
         Area
       </Link>
 
-      <NavGroup />
+      <nav className={styles.navigation}>
+        <NavGroup />
+      </nav>
 
-      Button
+      <button>Button</button>
     </header>
   )
 }
