@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Crimson_Text, DM_Sans, Roboto_Mono } from "next/font/google";
+import { Header } from '@/layouts/header/Header';
+import { Footer } from '@/layouts/footer/Footer';
 import "./globals.css";
 
 const crimsonText = Crimson_Text({
@@ -9,7 +11,7 @@ const crimsonText = Crimson_Text({
 });
 
 const dmSans = DM_Sans({
-  weight: ["400"],
+  weight: ["400", "500", "700"],
   variable: "--font-dm-sans",
   subsets: ["latin"],
 });
@@ -33,7 +35,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${crimsonText.variable} ${dmSans.variable} ${robotoMono.variable}`}>
-        {children}
+        <div className="container">
+          <Header />
+          <main>
+            {children}
+          </main>
+          <Footer />
+        </div>
       </body>
     </html>
   );

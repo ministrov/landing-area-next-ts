@@ -1,0 +1,15 @@
+.nav {
+  background-color: palevioletred;
+}
+
+.list {
+  display: flex;
+  gap: 27px;
+}
+
+.anchor {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  color: var(----foreground);
+}
