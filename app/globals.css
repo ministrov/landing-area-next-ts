@@ -47,6 +47,11 @@ a {
   overflow: hidden;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 /* Modern CSS Reset */
 *,
 *::before,
@@ -83,4 +88,13 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    max-width: 100%;
+    margin: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
