@@ -1,12 +1,17 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { ButtonProps } from './Button.interface';
+import cn from 'classnames';
+import arrow from '../../public/button-arrow.svg';
 import styles from "./Button.module.css";
 
 export const Button = ({ children, varient = 'default' }: ButtonProps) => {
   return (
-    <Link href={'#'} className={styles.button}>
+    <Link href={'#'} className={cn(styles.button, {
+      [styles.medium]: varient === 'medium'
+    })}>
       <span>{children}</span>
-      {varient !== 'default' && (<div>Arrow</div>)}
+      {varient !== 'default' && (<Image src={arrow} width={8} height={8} alt={''} />)}
     </Link>
   )
 }

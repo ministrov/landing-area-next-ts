@@ -1,9 +1,11 @@
 .button {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 2px;
   padding-top: 14px;
-  padding-left: 22px;
-  padding-right: 22px;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-bottom: 14px;
   font-family: var(--font-dm-sans);
   font-size: 14px;
@@ -11,4 +13,9 @@
   color: var(--foreground);
   background-color: var(--color-03);
   border-radius: 1000px;
+}
+
+.medium {
+  color: var(----background);
+  background-color: var(--color-04);
 }
