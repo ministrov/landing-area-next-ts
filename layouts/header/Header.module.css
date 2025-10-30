@@ -24,6 +24,15 @@
   padding-bottom: 20px;
 }
 
+.burger {
+  display: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
 @media screen and (max-width: 800px) {
   .header {
     padding-top: 20px;
@@ -31,5 +40,22 @@
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     box-shadow: 0 2px 4px -3px rgba(0, 0, 0, 0.2);
+  }
+
+  .wrapper {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .more {
+    display: none;
   }
 }

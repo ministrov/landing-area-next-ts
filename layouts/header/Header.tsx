@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { NavGroup } from '@/components/navGroup/NavGroup';
 import { Button } from '@/components/burtton/Button';
 import { headerLinks } from '@/helpers';
@@ -17,7 +18,11 @@ export const Header = () => {
             <NavGroup links={headerLinks} />
           </nav>
 
-          <Button varient='medium'>Learn More</Button>
+          <Button varient='medium' className={styles.more}>Learn More</Button>
+
+          <button className={styles.burger}>
+            <Image src={'/burger.svg'} width={24} height={24} alt={''} />
+          </button>
         </div>
       </div>
     </header>

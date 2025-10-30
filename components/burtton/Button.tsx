@@ -5,9 +5,9 @@ import cn from 'classnames';
 import arrow from '../../public/button-arrow.svg';
 import styles from "./Button.module.css";
 
-export const Button = ({ children, varient = 'default' }: ButtonProps) => {
+export const Button = ({ children, className, varient = 'default' }: ButtonProps) => {
   return (
-    <Link href={'#'} className={cn(styles.button, {
+    <Link href={'#'} className={cn(styles.button, className, {
       [styles.medium]: varient === 'medium'
     })}>
       <span>{children}</span>
