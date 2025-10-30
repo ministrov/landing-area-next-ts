@@ -7,15 +7,19 @@ import styles from "./Header.module.css";
 export const Header = () => {
   return (
     <header className={styles.header}>
-      <Link href={'/'} className={styles.link}>
-        Area
-      </Link>
+      <div className="container">
+        <div className={styles.wrapper}>
+          <Link href={'/'} className={styles.link}>
+            Area
+          </Link>
 
-      <nav className={styles.navigation}>
-        <NavGroup links={headerLinks} />
-      </nav>
+          <nav className={styles.navigation}>
+            <NavGroup links={headerLinks} />
+          </nav>
 
-      <Button varient='medium'>Learn More</Button>
+          <Button varient='medium'>Learn More</Button>
+        </div>
+      </div>
     </header>
   )
 }
