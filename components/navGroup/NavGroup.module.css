@@ -1,9 +1,6 @@
-.nav {
-  background-color: palevioletred;
-}
-
 .list {
   display: flex;
+  flex-wrap: wrap;
   gap: 27px;
 }
 
@@ -11,5 +8,5 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 20px;
-  color: var(----foreground);
+  color: var(--foreground);
 }

@@ -1,19 +1,30 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { NavGroup } from '@/components/navGroup/NavGroup';
+import { Button } from '@/components/burtton/Button';
+import { headerLinks } from '@/helpers';
 import styles from "./Header.module.css";
 
 export const Header = () => {
   return (
     <header className={styles.header}>
-      <Link href={'/'} className={styles.link}>
-        Area
-      </Link>
+      <div className="container">
+        <div className={styles.wrapper}>
+          <Link href={'/'} className={styles.link}>
+            Area
+          </Link>
 
-      <nav className={styles.navigation}>
-        <NavGroup />
-      </nav>
+          <nav className={styles.navigation}>
+            <NavGroup links={headerLinks} />
+          </nav>
 
-      <button>Button</button>
+          <Button varient='medium' className={styles.more}>Learn More</Button>
+
+          <button className={styles.burger}>
+            <Image src={'/burger.svg'} width={24} height={24} alt={''} />
+          </button>
+        </div>
+      </div>
     </header>
   )
 }
