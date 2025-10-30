@@ -41,4 +41,25 @@
   .wrapper {
     border-top: none;
   }
+
+  .top {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .list {
+    flex-direction: column;
+  }
+
+  .copyright {
+    font-size: 11px;
+    line-height: 17px;
+    white-space: nowrap;
+  }
+
+  .bottom p {
+    font-size: 13px;
+    line-height: 19px;
+    white-space: nowrap;
+  }
 }
