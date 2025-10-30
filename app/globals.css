@@ -90,6 +90,13 @@ select {
   font: inherit;
 }
 
+@media screen and (max-width: 1280px) {
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .container {
     max-width: 100%;
