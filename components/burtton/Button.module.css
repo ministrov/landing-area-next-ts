@@ -1,3 +1,14 @@
 .button {
-  background-color: var(--color-04);
+  display: flex;
+  gap: 2px;
+  padding-top: 14px;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-bottom: 14px;
+  font-family: var(--font-dm-sans);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--foreground);
+  background-color: var(--color-03);
+  border-radius: 1000px;
 }

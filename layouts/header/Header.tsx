@@ -14,7 +14,7 @@ export const Header = () => {
         <NavGroup />
       </nav>
 
-      <Button />
+      <Button varient='medium'>Discover More</Button>
     </header>
   )
 }
