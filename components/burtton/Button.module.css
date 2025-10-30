@@ -3,10 +3,10 @@
   align-items: center;
   justify-content: center;
   gap: 2px;
-  padding-top: 14px;
+  padding-top: 13px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 14px;
+  padding-bottom: 13px;
   font-family: var(--font-dm-sans);
   font-size: 14px;
   font-weight: 700;
@@ -16,6 +16,7 @@
 }
 
 .medium {
-  color: var(----background);
+  padding: 13px 26px;
+  color: var(--background);
   background-color: var(--color-04);
 }
