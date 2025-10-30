@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { NavGroup } from '@/components/navGroup/NavGroup';
+import { Button } from '@/components/burtton/Button';
 import styles from "./Header.module.css";
 
 export const Header = () => {
@@ -13,7 +14,7 @@ export const Header = () => {
         <NavGroup />
       </nav>
 
-      <button>Button</button>
+      <Button />
     </header>
   )
 }
