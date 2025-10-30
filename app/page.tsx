@@ -2,7 +2,7 @@ import { Button } from '@/components/burtton/Button';
 
 export default function Home() {
   return (
-    <div>
+    <div className='container'>
       Hello World
 
 
