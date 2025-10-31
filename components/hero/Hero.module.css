@@ -4,7 +4,6 @@
   flex-direction: column;
   height: 738px;
   overflow: hidden;
-  background-color: palevioletred;
 }
 
 .title {
@@ -28,4 +27,27 @@
   margin-top: auto;
   background-color: var(--color-04);
   border-radius: 24px;
+}
+
+@media screen and (max-width: 1280px) {
+  .title {
+    font-size: 140px;
+    line-height: 120px;
+    text-align: center;
+  }
+
+  .image {
+    bottom: -12px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .title {
+    font-size: 76px;
+    line-height: 70px;
+  }
+
+  .image {
+    bottom: -102px;
+  }
 }

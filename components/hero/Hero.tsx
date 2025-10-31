@@ -9,7 +9,13 @@ export const Hero = () => {
 
   console.log(setWindowWidth);
 
-  useEffect(() => { }, []);
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    handleResize(); // установить начальное значение
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   let src = '/hero-desktop.png';
   let width = 907;
@@ -17,12 +23,12 @@ export const Hero = () => {
 
   if (windowWidth <= 800) {
     src = '/hero-mobile.png';
-    width = 345;
-    height = 434;
+    width = 270;
+    height = 541;
   } else if (windowWidth <= 1280) {
     src = '/hero-tablet.png';
-    width = 768;
-    height = 544;
+    width = 676;
+    height = 422;
   }
 
   return (
