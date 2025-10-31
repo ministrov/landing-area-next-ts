@@ -36,7 +36,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${crimsonText.variable} ${dmSans.variable} ${robotoMono.variable}`}>
         <Header />
-        <main style={{ height: '100vh' }}>
+        <main>
           {children}
         </main>
         <Footer />
