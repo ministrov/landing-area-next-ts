@@ -7,7 +7,7 @@ import styles from './Hero.module.css';
 export const Hero = () => {
   const [windowWidth, setWindowWidth] = useState<number>(0);
 
-  console.log(setWindowWidth);
+  // console.log(setWindowWidth);
 
   useEffect(() => {
     const handleResize = () => setWindowWidth(window.innerWidth);

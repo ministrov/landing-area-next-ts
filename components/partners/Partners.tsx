@@ -1,3 +1,6 @@
+import Image from 'next/image';
+
+import { partners } from '@/helpers';
 import styles from './Partners.module.css';
 
 export const Partners = () => {
@@ -7,7 +10,11 @@ export const Partners = () => {
       <p className={styles.slogan}>Trusted by:</p>
 
       <ul className={styles.partnersList}>
-
+        {partners.map(partner => (
+          <li className={styles.partnerItem} key={partner.id}>
+            <Image src={partner.path} width={114} height={44} alt='' />
+          </li>
+        ))}
       </ul>
     </section>
   )
