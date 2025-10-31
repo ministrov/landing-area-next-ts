@@ -1,11 +1,20 @@
+'use client';
+
 import Link from 'next/link';
-import Image from 'next/image';
+import { useState, useEffect } from 'react';
+import { Squash as Hamburger } from 'hamburger-react';
 import { NavGroup } from '@/components/navGroup/NavGroup';
 import { Button } from '@/components/burtton/Button';
 import { headerLinks } from '@/helpers';
 import styles from "./Header.module.css";
+import { NavMobile } from '@/components/navMobile/NavMobile';
 
 export const Header = () => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
+  useEffect(() => {
+    console.log('render');
+  }, []);
   return (
     <header className={styles.header}>
       <div className="container">
@@ -21,10 +30,21 @@ export const Header = () => {
           <Button varient='medium' className={styles.more}>Learn More</Button>
 
           <button className={styles.burger}>
-            <Image src={'/burger.svg'} width={24} height={24} alt={''} />
+            <Hamburger
+              toggled={isOpen}
+              size={22}
+              toggle={setIsOpen}
+              color="#000000"
+              easing="ease-in-out"
+              hideOutline={false}
+              label="Show menu"
+            />
           </button>
         </div>
       </div>
+      {isOpen && (
+        <NavMobile />
+      )}
     </header>
   )
 }
