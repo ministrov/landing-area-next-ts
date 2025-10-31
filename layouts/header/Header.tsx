@@ -1,5 +1,8 @@
+'use client';
+
 import Link from 'next/link';
-import Image from 'next/image';
+// import Image from 'next/image';
+import { Squash as Hamburger } from 'hamburger-react';
 import { NavGroup } from '@/components/navGroup/NavGroup';
 import { Button } from '@/components/burtton/Button';
 import { headerLinks } from '@/helpers';
@@ -21,7 +24,15 @@ export const Header = () => {
           <Button varient='medium' className={styles.more}>Learn More</Button>
 
           <button className={styles.burger}>
-            <Image src={'/burger.svg'} width={24} height={24} alt={''} />
+            <Hamburger
+              // toggled={isOpen}
+              size={22}
+              // toggle={setOpen}
+              color="#000000"
+              easing="ease-in-out"
+              // hideOutline={false}
+              label="Show menu"
+            />
           </button>
         </div>
       </div>
