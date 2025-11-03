@@ -60,3 +60,9 @@
   line-height: 21px;
   color: var(--color-06);
 }
+
+@media screen and (max-width: 1280px) {
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
