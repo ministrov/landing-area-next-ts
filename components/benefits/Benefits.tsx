@@ -1,7 +1,27 @@
+'use client';
+
 import Image from 'next/image';
+import { useWindowWidth } from '@/hooks/useWindowWidth';
 import styles from './Benefits.module.css';
 
 export const Benefits = () => {
+  const windowWidth = useWindowWidth();
+
+  console.log(windowWidth);
+
+  let src = '/benefits-image-desktop.jpg';
+  let width = 1200;
+  let height = 620;
+
+  if (windowWidth <= 800) {
+    src = '/benefits-image-mobile.jpg';
+    width = 343;
+    height = 600;
+  } else if (windowWidth <= 1280) {
+    src = '/benefits-image-tablet.jpg';
+    width = 700;
+    height = 600;
+  }
   return (
     <section className={styles.benefits}>
       <header className={styles.header}>
@@ -33,7 +53,7 @@ export const Benefits = () => {
         </li>
       </ul>
 
-      <Image src="/benefits-image-desktop.jpg" width={1200} height={620} alt="" />
+      <Image src={src} width={width} height={height} alt="" />
     </section>
   )
 }

@@ -1,19 +1,11 @@
 'use client';
 
 import Image from 'next/image';
-import { useState, useEffect } from 'react';
+import { useWindowWidth } from '@/hooks/useWindowWidth';
 import styles from './Hero.module.css';
 
 export const Hero = () => {
-  const [windowWidth, setWindowWidth] = useState<number>(0);
-
-  useEffect(() => {
-    const handleResize = () => setWindowWidth(window.innerWidth);
-    handleResize(); // установить начальное значение
-
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
+  const windowWidth = useWindowWidth();
 
   let src = '/hero-desktop.png';
   let width = 907;
