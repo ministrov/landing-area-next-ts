@@ -7,7 +7,7 @@ export const useWindowWidth = () => {
 
   useEffect(() => {
     const handleResize = () => setWindowWidth(window.innerWidth);
-    handleResize(); // установить начальное значение
+    handleResize();
 
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);

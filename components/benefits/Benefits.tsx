@@ -7,8 +7,6 @@ import styles from './Benefits.module.css';
 export const Benefits = () => {
   const windowWidth = useWindowWidth();
 
-  console.log(windowWidth);
-
   let src = '/benefits-image-desktop.jpg';
   let width = 1200;
   let height = 620;
@@ -53,7 +51,7 @@ export const Benefits = () => {
         </li>
       </ul>
 
-      <Image src={src} width={width} height={height} alt="" />
+      <Image className={styles.image} src={src} width={width} height={height} alt="" />
     </section>
   )
 }
