@@ -2,7 +2,6 @@
   height: 235px;
   padding-top: 50px;
   padding-bottom: 50px;
-  background-color: plum;
 }
 
 .slogan {
@@ -21,4 +20,22 @@
 
 .partnerItem {
   padding: 20px;
+}
+
+@media screen and (max-width: 1280px) {
+  .partners {
+    height: auto;
+  }
+
+  .partnersList {
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 40px;
+    row-gap: 20px;
+  }
+
+  .partnersList img {
+    width: 110px;
+    height: 42px;
+  }
 }
