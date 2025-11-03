@@ -4,10 +4,10 @@ import styles from './Benefits.module.css';
 export const Benefits = () => {
   return (
     <section className={styles.benefits}>
-      <header>
+      <header className={styles.header}>
         <h2 className={styles.heading}>Benefits</h2>
-        <p>We’ve cracked the code.</p>
-        <p>Area provides real insights, without the data overload.</p>
+        <p className={styles.slogan}>We’ve cracked the code.</p>
+        <p className={styles.insights}>Area provides real insights, without the data overload.</p>
       </header>
 
       <ul>
