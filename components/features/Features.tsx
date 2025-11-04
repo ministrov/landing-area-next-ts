@@ -11,10 +11,22 @@ export const Features = () => {
         <p className={styles.slogan}>Area turns your data into clear, vibrant visuals that show you exactly what&apos;s happening in each region.</p>
 
         <ul className={styles.list}>
-          <li className={styles.item}></li>
-          <li className={styles.item}></li>
-          <li className={styles.item}></li>
-          <li className={styles.item}></li>
+          <li className={styles.item}>
+            <span>01</span>
+            <p>Spot Trends in Seconds: No more digging through numbers.</p>
+          </li>
+          <li className={styles.item}>
+            <span>02</span>
+            <p>Get Everyone on the Same Page: Share easy-to-understand reports with your team. </p>
+          </li>
+          <li className={styles.item}>
+            <span>03</span>
+            <p>Make Presentations Pop: Interactive maps and dashboards keep your audience engaged.</p>
+          </li>
+          <li className={styles.item}>
+            <span>04</span>
+            <p>Your Global Snapshot: Get a quick, clear overview of your entire operation.</p>
+          </li>
         </ul>
 
         <Button>Discover More</Button>

@@ -1,10 +1,36 @@
 .features {
   display: flex;
   gap: 20px;
-  height: 831px;
+  padding-bottom: 120px;
   background-color: plum;
 }
 
 .text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   max-width: 590px;
+  padding-top: 60px;
+  padding-bottom: 80px;
+  border-top: 1px solid var(--color-02);
+}
+
+.title {
+  margin-bottom: 40px;
+  font-family: var(--font-crimson-text);
+  font-size: 60px;
+  line-height: 66px;
+  color: var(--foreground);
+}
+
+.slogan {
+  margin-bottom: 40px;
+  font-family: var(--font-dm-sans);
+  font-size: 15px;
+  line-height: 21px;
+  color: var(--color-06);
+}
+
+.list {
+  margin-bottom: 40px;
 }
