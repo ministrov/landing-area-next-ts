@@ -14,9 +14,11 @@
 }
 
 .textContent {
-  padding-top: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
   padding-left: 50px;
-  padding-bottom: 122px;
 }
 
 .text {

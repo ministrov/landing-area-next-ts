@@ -3,7 +3,7 @@ import { testimonials } from '@/helpers';
 import styles from './Testimonials.module.css';
 
 export const Testimonials = () => {
-  const { image, author, text, role } = testimonials[0];
+  const { image, author, text, role } = testimonials[1];
 
   return (
     <section className={styles.testimonials}>
