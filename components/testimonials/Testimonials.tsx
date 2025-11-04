@@ -9,8 +9,8 @@ export const Testimonials = () => {
     <section className={styles.testimonials}>
       <div className={styles.carousel}>
         <div className={styles.slide}>
-          <Image src={image} width={590} height={670} alt={author} className={styles.avatar} />
-          <div className={styles.content}>
+          <Image className={styles.image} src={image} width={590} height={670} alt={author} />
+          <div className={styles.textContent}>
             <p className={styles.text}>{text}</p>
             <p className={styles.author}>{author}</p>
             <p className={styles.role}>{role}</p>

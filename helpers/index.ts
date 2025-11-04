@@ -48,7 +48,6 @@ export const testimonials = [
   {
     text: `“Area has become my go-to platform for all analytics. Everything is so visual, my team learned it in a day!”`,
     author: 'Jane Doe',
-    role: 'Analytics Lead',
     image: '/testimonials-desktop.png',
   },
   {

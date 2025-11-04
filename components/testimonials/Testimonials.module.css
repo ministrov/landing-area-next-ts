@@ -2,3 +2,42 @@
   height: 790px;
   background-color: palegreen;
 }
+
+.carousel {
+  background-color: paleturquoise;
+}
+
+.slide {
+  display: flex;
+  gap: 20px;
+  max-height: 670px;
+}
+
+.textContent {
+  padding-top: 130px;
+  padding-left: 50px;
+  padding-bottom: 122px;
+}
+
+.text {
+  margin-bottom: 50px;
+  font-family: var(--font-crimson-text);
+  font-size: 40px;
+  line-height: 46px;
+  letter-spacing: -1px;
+  color: var(--foreground);
+}
+
+.author {
+  font-family: var(--font-dm-sans);
+  font-size: 15px;
+  line-height: 21px;
+  color: var(--foreground);
+}
+
+.role {
+  font-family: var(--font-roboto-mono);
+  font-size: 13px;
+  line-height: 19px;
+  color: var(--color-05);
+}
