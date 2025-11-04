@@ -41,3 +41,30 @@
   padding-bottom: 20px;
   border-top: 1px solid var(--color-02);
 }
+
+@media screen and (max-width: 1280px) {
+  .features {
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 54px;
+    line-height: 60px;
+  }
+
+  .text {
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .wrapperImage img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .title {
+    font-size: 50px;
+    line-height: 56px;
+  }
+}

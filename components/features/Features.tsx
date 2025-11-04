@@ -1,8 +1,26 @@
+'use client';
+
 import Image from 'next/image';
 import { Button } from '../burtton/Button';
+import { useWindowWidth } from '@/hooks/useWindowWidth';
 import styles from './Features.module.css';
 
 export const Features = () => {
+  const windowWidth = useWindowWidth();
+
+  let src = '/features-desktop.png';
+  let width = 590;
+  let height = 711;
+
+  if (windowWidth <= 800) {
+    src = '/features-mobile.png';
+    width = 311;
+    height = 386;
+  } else if (windowWidth <= 1280) {
+    src = '/features-tablet.png';
+    width = 720;
+    height = 744;
+  }
   return (
     <section className={styles.features}>
       <div className={styles.text}>
@@ -32,7 +50,7 @@ export const Features = () => {
         <Button>Discover More</Button>
       </div>
       <div className={styles.wrapperImage}>
-        <Image src={'/features-desktop.png'} width={590} height={711} alt={''} />
+        <Image src={src} width={width} height={height} alt={''} />
       </div>
     </section>
   )
