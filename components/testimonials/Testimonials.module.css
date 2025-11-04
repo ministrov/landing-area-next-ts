@@ -1,11 +1,12 @@
 .testimonials {
   height: 790px;
-  background-color: palegreen;
+  padding-bottom: 120px;
+  /* background-color: palegreen; */
 }
 
-.carousel {
+/* .carousel {
   background-color: paleturquoise;
-}
+} */
 
 .slide {
   display: flex;
@@ -19,6 +20,7 @@
   align-items: flex-start;
   justify-content: center;
   padding-left: 50px;
+  border-top: 1px solid var(--color-02);
 }
 
 .text {
@@ -42,4 +44,46 @@
   font-size: 13px;
   line-height: 19px;
   color: var(--color-05);
+}
+
+@media screen and (max-width: 1280px) {
+  .testimonials {
+    height: auto;
+  }
+
+  .textContent {
+    max-width: 100%;
+    padding-top: 42px;
+    padding-bottom: 42px;
+    padding-left: 0;
+  }
+
+  .image {
+    width: 100%;
+  }
+
+  .slide {
+    flex-direction: column;
+    gap: 40px;
+    height: auto;
+    max-height: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .testimonials {
+    padding-bottom: 100px;
+  }
+
+  .textContent {
+    max-width: 100%;
+    padding-top: 40px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 0;
+  }
+
+  .image {
+    height: 343px;
+  }
 }
