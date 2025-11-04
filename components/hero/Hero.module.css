@@ -30,6 +30,10 @@
 }
 
 @media screen and (max-width: 1280px) {
+  .hero {
+    height: 726px;
+  }
+
   .title {
     font-size: 140px;
     line-height: 120px;
@@ -42,6 +46,12 @@
 }
 
 @media screen and (max-width: 800px) {
+  .hero {
+    gap: 20px;
+    padding-top: 42px;
+    height: 626px;
+  }
+
   .title {
     font-size: 76px;
     line-height: 70px;

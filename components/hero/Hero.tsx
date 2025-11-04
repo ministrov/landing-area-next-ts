@@ -1,21 +1,11 @@
 'use client';
 
 import Image from 'next/image';
-import { useState, useEffect } from 'react';
+import { useWindowWidth } from '@/hooks/useWindowWidth';
 import styles from './Hero.module.css';
 
 export const Hero = () => {
-  const [windowWidth, setWindowWidth] = useState<number>(0);
-
-  // console.log(setWindowWidth);
-
-  useEffect(() => {
-    const handleResize = () => setWindowWidth(window.innerWidth);
-    handleResize(); // установить начальное значение
-
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
+  const windowWidth = useWindowWidth();
 
   let src = '/hero-desktop.png';
   let width = 907;
@@ -34,7 +24,7 @@ export const Hero = () => {
   return (
     <section className={styles.hero}>
       <h2 className={styles.title}>Browse everything.</h2>
-      <Image className={styles.image} src={src} width={width} height={height} alt={''} />
+      <Image className={styles.image} src={src} width={width} height={height} alt={''} priority />
       <div className={styles.background}></div>
     </section>
   )
