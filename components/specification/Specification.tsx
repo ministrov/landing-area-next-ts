@@ -6,9 +6,9 @@ export const Specification = () => {
     <section className={styles.spec}>
       <div className={styles.heading}>
         <h2 className={styles.title}>Specs</h2>
-        <p>Why Choose Area?</p>
-        <p>You need a solution that keeps up. That’s why we developed Area. A developer-friendly approach to streamline your business. </p>
-        <Button>Discover More</Button>
+        <p className={styles.question}>Why Choose Area?</p>
+        <p className={styles.paragraph}>You need a solution that keeps up. That’s why we developed Area. A developer-friendly approach to streamline your business. </p>
+        <Button className={styles.btn}>Discover More</Button>
       </div>
 
       <ul className={styles.list}>
