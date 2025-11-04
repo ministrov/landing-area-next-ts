@@ -1,0 +1,11 @@
+.spec {
+  height: 1153px;
+  padding-top: 80px;
+  padding-bottom: 120px;
+  background-color: peachpuff;
+}
+
+.heading {
+  max-width: 720px;
+  margin: 0 auto;
+}
