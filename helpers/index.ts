@@ -37,3 +37,24 @@ export const partners = [
   { id: 5, path: partner5 },
   { id: 6, path: partner6 },
 ];
+
+export const testimonials = [
+  {
+    text: `“I was skeptical, but Area has completely transformed the way I manage my business. The data visualizations are so clear and intuitive, and the platform is so easy to use. I can't imagine running my company without it.”`,
+    author: 'John Smith',
+    role: 'Head of Data',
+    image: '/testimonials-desktop.png',
+  },
+  {
+    text: `“Area has become my go-to platform for all analytics. Everything is so visual, my team learned it in a day!”`,
+    author: 'Jane Doe',
+    role: 'Analytics Lead',
+    image: '/testimonials-desktop.png',
+  },
+  {
+    text: `“If you want clarity in your data and processes, Area is a must-have. Support is super responsive!”`,
+    author: 'Mike Brown',
+    role: 'Operations Manager',
+    image: '/testimonials-desktop.png',
+  },
+];

@@ -3,6 +3,7 @@ import { Partners } from '@/components/partners/Partners';
 import { Benefits } from '@/components/benefits/Benefits';
 import { Features } from '@/components/features/Features';
 import { Specification } from '@/components/specification/Specification';
+import { Testimonials } from '@/components/testimonials/Testimonials';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Benefits />
       <Features />
       <Specification />
+      <Testimonials />
     </div>
   );
 }
