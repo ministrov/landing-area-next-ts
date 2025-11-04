@@ -1,9 +1,29 @@
+'use client';
+
 import Image from 'next/image';
+import { useState, useEffect } from 'react';
 import { testimonials } from '@/helpers';
 import styles from './Testimonials.module.css';
 
 export const Testimonials = () => {
-  const { image, author, text, role } = testimonials[1];
+  const [current, setCurrent] = useState<number>(0);
+
+  useEffect(() => {
+    const isMobile = () =>
+      typeof window !== 'undefined' && window.innerWidth <= 800;
+
+    if (!isMobile()) {
+      const timeout = setInterval(() => {
+        setCurrent((prev) => (prev + 1) % testimonials.length);
+      }, 4000);
+
+      return () => clearInterval(timeout);
+    }
+    // На мобильных автосмены нет
+    return undefined;
+  }, []);
+
+  const { image, author, text, role } = testimonials[current];
 
   return (
     <section className={styles.testimonials}>
