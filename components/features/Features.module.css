@@ -1,4 +1,10 @@
 .features {
+  display: flex;
+  gap: 20px;
   height: 831px;
   background-color: plum;
+}
+
+.text {
+  max-width: 590px;
 }

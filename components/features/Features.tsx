@@ -20,7 +20,7 @@ export const Features = () => {
         <Button>Discover More</Button>
       </div>
       <div className={styles.wrapperImage}>
-        <Image src={''} alt={''} />
+        <Image src={'/features-desktop.png'} width={590} height={711} alt={''} />
       </div>
     </section>
   )
