@@ -24,7 +24,7 @@ export const Hero = () => {
   return (
     <section className={styles.hero}>
       <h2 className={styles.title}>Browse everything.</h2>
-      <Image className={styles.image} src={src} width={width} height={height} alt={''} />
+      <Image className={styles.image} src={src} width={width} height={height} alt={''} priority />
       <div className={styles.background}></div>
     </section>
   )

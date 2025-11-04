@@ -1,20 +1,17 @@
 'use client';
 
 import Link from 'next/link';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Squash as Hamburger } from 'hamburger-react';
 import { NavGroup } from '@/components/navGroup/NavGroup';
 import { Button } from '@/components/burtton/Button';
+import { NavMobile } from '@/components/navMobile/NavMobile';
 import { headerLinks } from '@/helpers';
 import styles from "./Header.module.css";
-import { NavMobile } from '@/components/navMobile/NavMobile';
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
-  useEffect(() => {
-    console.log('render');
-  }, []);
   return (
     <header className={styles.header}>
       <div className="container">
