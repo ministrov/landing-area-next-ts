@@ -5,6 +5,7 @@ import { Features } from '@/components/features/Features';
 import { Specification } from '@/components/specification/Specification';
 import { Testimonials } from '@/components/testimonials/Testimonials';
 import { HowItWorks } from '@/components/howItWorks/HowItWorks';
+import { ConnectUs } from '@/components/connectUs/ConnectUs';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Specification />
       <Testimonials />
       <HowItWorks />
+      <ConnectUs />
     </div>
   );
 }
