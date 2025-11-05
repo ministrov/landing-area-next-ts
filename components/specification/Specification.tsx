@@ -13,7 +13,9 @@ export const Specification = () => {
 
       <ul className={styles.list}>
         <li className={styles.item}>
-          Area
+          <div className={styles.top}>
+            Area
+          </div>
           <ul>
             <li>Ultra-fast browsing</li>
             <li>Advanced AI insights</li>
@@ -24,7 +26,9 @@ export const Specification = () => {
           </ul>
         </li>
         <li className={styles.item}>
-          WebSurge
+          <div className={styles.top}>
+            WebSurge
+          </div>
           <ul>
             <li>Fast browsing</li>
             <li>Basic AI recommendations</li>
@@ -35,7 +39,9 @@ export const Specification = () => {
           </ul>
         </li>
         <li className={styles.item}>
-          HyperView
+          <div className={styles.top}>
+            HyperView
+          </div>
 
           <ul>
             <li>Moderate speeds</li>
