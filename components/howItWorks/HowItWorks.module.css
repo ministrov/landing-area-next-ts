@@ -57,3 +57,44 @@
   margin-top: 120px;
   border-radius: 30px;
 }
+
+@media screen and (max-width: 1280px) {
+  .title {
+    font-size: 54px;
+    line-height: 60px;
+  }
+
+  .item:nth-child(2) span {
+    line-height: 56px;
+  }
+
+  .item:nth-child(2) p {
+    max-width: 210px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .how {
+    overflow: hidden;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .title {
+    font-size: 50px;
+    line-height: 56px;
+  }
+
+  .item {
+    width: 60vw;
+  }
+
+  .image {
+    height: 600px;
+    margin-top: 100px;
+  }
+}
