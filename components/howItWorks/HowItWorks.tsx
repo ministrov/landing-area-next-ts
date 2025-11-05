@@ -29,7 +29,7 @@ export const HowItWorks = () => {
         </li>
       </ul>
 
-      <Image src={'/how-desktop.png'} width={1200} height={665} alt={''} />
+      <Image className={styles.image} src={'/how-desktop.png'} width={1200} height={665} alt={''} />
     </section>
   )
 }
