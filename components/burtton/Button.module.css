@@ -9,14 +9,31 @@
   padding-bottom: 13px;
   font-family: var(--font-dm-sans);
   font-size: 14px;
+  line-height: 20px;
   font-weight: 700;
   color: var(--foreground);
   background-color: var(--color-03);
   border-radius: 1000px;
+  transition: all 0.5s ease-in-out;
+}
+
+.button:hover {
+  color: var(--background);
+  background-color: var(--color-04);
+  opacity: 0.7;
 }
 
 .medium {
   padding: 13px 26px;
   color: var(--background);
   background-color: var(--color-04);
+  transition: all 0.5s ease-in-out;
+}
+
+.medium:hover {
+  opacity: 0.7;
+}
+
+.medium:hover img {
+  transform: translateY(-10px);
 }
