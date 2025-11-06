@@ -16,26 +16,26 @@ export const Specification = () => {
           <div className={styles.top}>
             Area
           </div>
-          <ul>
-            <li>Ultra-fast browsing</li>
-            <li>Advanced AI insights</li>
-            <li>Seamless integration</li>
-            <li>Advanced AI insights</li>
-            <li>Ultra-fast browsing</li>
-            <li>Full UTF-8 support</li>
+          <ul className={styles.subList}>
+            <li className={styles.subItem}>Ultra-fast browsing</li>
+            <li className={styles.subItem}>Advanced AI insights</li>
+            <li className={styles.subItem}>Seamless integration</li>
+            <li className={styles.subItem}>Advanced AI insights</li>
+            <li className={styles.subItem}>Ultra-fast browsing</li>
+            <li className={styles.subItem}>Full UTF-8 support</li>
           </ul>
         </li>
         <li className={styles.item}>
           <div className={styles.top}>
             WebSurge
           </div>
-          <ul>
-            <li>Fast browsing</li>
-            <li>Basic AI recommendations</li>
-            <li>Restricts customization</li>
-            <li>Basic AI insights</li>
-            <li>Fast browsing</li>
-            <li>Potential display errors</li>
+          <ul className={styles.subList}>
+            <li className={styles.subItem}>Fast browsing</li>
+            <li className={styles.subItem}>Basic AI recommendations</li>
+            <li className={styles.subItem}>Restricts customization</li>
+            <li className={styles.subItem}>Basic AI insights</li>
+            <li className={styles.subItem}>Fast browsing</li>
+            <li className={styles.subItem}>Potential display errors</li>
           </ul>
         </li>
         <li className={styles.item}>
@@ -43,13 +43,13 @@ export const Specification = () => {
             HyperView
           </div>
 
-          <ul>
-            <li>Moderate speeds</li>
-            <li>No AI assistance</li>
-            <li>Steep learning curve</li>
-            <li>No AI assistance</li>
-            <li>Moderate speeds</li>
-            <li>Partial UTF-8 support</li>
+          <ul className={styles.subList}>
+            <li className={styles.subItem}>Moderate speeds</li>
+            <li className={styles.subItem}>No AI assistance</li>
+            <li className={styles.subItem}>Steep learning curve</li>
+            <li className={styles.subItem}>No AI assistance</li>
+            <li className={styles.subItem}>Moderate speeds</li>
+            <li className={styles.subItem}>Partial UTF-8 support</li>
           </ul>
         </li>
       </ul>
