@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { Button } from '../burtton/Button';
 import styles from './Specification.module.css';
 
@@ -17,12 +18,35 @@ export const Specification = () => {
             Area
           </div>
           <ul className={styles.subList}>
-            <li className={styles.subItem}>Ultra-fast browsing</li>
-            <li className={styles.subItem}>Advanced AI insights</li>
-            <li className={styles.subItem}>Seamless integration</li>
-            <li className={styles.subItem}>Advanced AI insights</li>
-            <li className={styles.subItem}>Ultra-fast browsing</li>
-            <li className={styles.subItem}>Full UTF-8 support</li>
+            <li className={styles.subItem}>
+              <Image src={'/tick.svg'} width={14} height={14} alt={''} />
+
+              <p>Ultra-fast browsing</p>
+            </li>
+            <li className={styles.subItem}>
+              <Image src={'/tick.svg'} width={14} height={14} alt={''} />
+              <p>Advanced AI insights</p>
+            </li>
+            <li className={styles.subItem}>
+              <Image src={'/tick.svg'} width={14} height={14} alt={''} />
+
+              <p>Seamless integration</p>
+            </li>
+            <li className={styles.subItem}>
+              <Image src={'/tick.svg'} width={14} height={14} alt={''} />
+
+              <p>Advanced AI insights</p>
+            </li>
+            <li className={styles.subItem}>
+              <Image src={'/tick.svg'} width={14} height={14} alt={''} />
+
+              <p>Ultra-fast browsing</p>
+            </li>
+            <li className={styles.subItem}>
+              <Image src={'/tick.svg'} width={14} height={14} alt={''} />
+
+              <p>Full UTF-8 support</p>
+            </li>
           </ul>
         </li>
         <li className={styles.item}>
@@ -30,12 +54,36 @@ export const Specification = () => {
             WebSurge
           </div>
           <ul className={styles.subList}>
-            <li className={styles.subItem}>Fast browsing</li>
-            <li className={styles.subItem}>Basic AI recommendations</li>
-            <li className={styles.subItem}>Restricts customization</li>
-            <li className={styles.subItem}>Basic AI insights</li>
-            <li className={styles.subItem}>Fast browsing</li>
-            <li className={styles.subItem}>Potential display errors</li>
+            <li className={styles.subItem}>
+              <Image src={'/tick.svg'} width={14} height={14} alt={''} />
+
+              <p>Fast browsing</p>
+            </li>
+            <li className={styles.subItem}>
+              <Image src={'/tick.svg'} width={14} height={14} alt={''} />
+
+              <p>Basic AI recommendations</p>
+            </li>
+            <li className={styles.subItem}>
+              <Image src={'/tick.svg'} width={14} height={14} alt={''} />
+
+              <p>Restricts customization</p>
+            </li>
+            <li className={styles.subItem}>
+              <Image src={'/cross.svg'} width={10} height={10} alt={''} />
+
+              <p>Basic AI insights</p>
+            </li>
+            <li className={styles.subItem}>
+              <Image src={'/tick.svg'} width={12} height={12} alt={''} />
+
+              <p>Fast browsing</p>
+            </li>
+            <li className={styles.subItem}>
+              <Image src={'/cross.svg'} width={10} height={10} alt={''} />
+
+              <p>Potential display errors</p>
+            </li>
           </ul>
         </li>
         <li className={styles.item}>
@@ -44,12 +92,35 @@ export const Specification = () => {
           </div>
 
           <ul className={styles.subList}>
-            <li className={styles.subItem}>Moderate speeds</li>
-            <li className={styles.subItem}>No AI assistance</li>
-            <li className={styles.subItem}>Steep learning curve</li>
-            <li className={styles.subItem}>No AI assistance</li>
-            <li className={styles.subItem}>Moderate speeds</li>
-            <li className={styles.subItem}>Partial UTF-8 support</li>
+            <li className={styles.subItem}>
+              <Image src={'/cross.svg'} width={10} height={10} alt={''} />
+
+              <p>Moderate speeds</p>
+            </li>
+            <li className={styles.subItem}>
+              <Image src={'/cross.svg'} width={10} height={10} alt={''} />
+
+              <p>No AI assistance</p>
+            </li>
+            <li className={styles.subItem}>
+              <Image src={'/cross.svg'} width={10} height={10} alt={''} />
+
+              <p>Steep learning curve</p>
+            </li>
+            <li className={styles.subItem}>
+              <Image src={'/cross.svg'} width={10} height={10} alt={''} />
+
+              <p>No AI assistance</p>
+            </li>
+            <li className={styles.subItem}>
+              <Image src={'/cross.svg'} width={10} height={10} alt={''} />
+              <p>Moderate speeds</p>
+            </li>
+            <li className={styles.subItem}>
+              <Image src={'/cross.svg'} width={10} height={10} alt={''} />
+
+              <p>Partial UTF-8 support</p>
+            </li>
           </ul>
         </li>
       </ul>

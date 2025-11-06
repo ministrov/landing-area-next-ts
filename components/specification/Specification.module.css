@@ -38,6 +38,16 @@
   grid-template-columns: repeat(3, 1fr);
 }
 
+.item {
+  border: 1px solid transparent;
+  border-radius: none;
+}
+
+.item:hover {
+  box-shadow: 0 2px 4px -3px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
 .top {
   padding-top: 40px;
   padding-bottom: 30px;
@@ -49,10 +59,16 @@
 }
 
 .subItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-roboto-mono);
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--foreground);
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 30px;
-  /* text-align: center; */
   border: 1px solid var(--color-02);
 }
 
