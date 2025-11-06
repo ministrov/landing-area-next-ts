@@ -1,7 +1,7 @@
 .list {
   display: flex;
   flex-wrap: wrap;
-  gap: 27px;
+  gap: 24px;
 }
 
 .anchor {

@@ -18,10 +18,11 @@
 }
 
 .navigation {
-  padding-top: 20px;
+  margin-left: 83px;
+  padding-top: 19px;
   padding-left: 24px;
   padding-right: 24px;
-  padding-bottom: 20px;
+  padding-bottom: 19px;
 }
 
 .burger {
