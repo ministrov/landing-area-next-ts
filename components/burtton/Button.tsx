@@ -10,7 +10,7 @@ export const Button = ({ children, className, varient = 'default' }: ButtonProps
     <Link href={'#'} className={cn(styles.button, className, {
       [styles.medium]: varient === 'medium'
     })}>
-      <span>{children}</span>
+      {children}
       {varient !== 'default' && (<Image src={arrow} width={8} height={8} alt={''} />)}
     </Link>
   )

@@ -7,18 +7,31 @@ import styles from './Hero.module.css';
 export const Hero = () => {
   const windowWidth = useWindowWidth();
 
-  let src = '/hero-desktop.png';
-  let width = 907;
-  let height = 644;
+  // Пока не знаем ширину - не рендерим изображение или рендерим плейсхолдер
+  if (windowWidth === null) {
+    return (
+      <section className={styles.hero}>
+        <h2 className={styles.title}>Browse everything.</h2>
+        <div className={styles.imagePlaceholder}></div>
+        <div className={styles.background}></div>
+      </section>
+    );
+  }
 
-  if (windowWidth <= 800) {
-    src = '/hero-mobile.png';
-    width = 270;
-    height = 541;
-  } else if (windowWidth <= 1280) {
+  let src, width, height;
+
+  if (windowWidth > 1280) {
+    src = '/hero-desktop.png';
+    width = 907;
+    height = 644;
+  } else if (windowWidth > 800) {
     src = '/hero-tablet.png';
     width = 676;
     height = 422;
+  } else {
+    src = '/hero-mobile.png';
+    width = 270;
+    height = 541;
   }
 
   return (

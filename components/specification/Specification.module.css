@@ -1,5 +1,4 @@
 .spec {
-  height: 1153px;
   padding-top: 80px;
   padding-bottom: 120px;
 }
@@ -7,6 +6,7 @@
 .heading {
   max-width: 720px;
   margin: 0 auto;
+  margin-bottom: 100px;
 }
 
 .title {
@@ -33,9 +33,78 @@
   color: var(--color-06);
 }
 
+.list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.top {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  font-size: 23px;
+  line-height: 30px;
+  text-align: center;
+  color: var(--color-06);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom: 1px solid var(--color-01);
+  transition: all 0.5s ease-in-out;
+}
+
+.item {
+  margin: 0;
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.item:hover {
+  box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.15);
+  border: 1px solid var(--color-02);
+  border-radius: 20px;
+  transform: translateY(-2px);
+}
+
+.item:hover .top {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom: 1px solid var(--color-02);
+}
+
+.subItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 32px;
+  padding-top: 32px;
+  padding-left: 30px;
+  font-family: var(--font-roboto-mono);
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--foreground);
+  border: 1px solid var(--color-02);
+  transition: all 0.5s ease-in-out;
+}
+
+.item:hover .subItem {
+  border-left: 1px solid var(--color-02);
+  border-right: 1px solid var(--color-02);
+  border-bottom: 1px solid var(--color-02);
+}
+
+.item:hover .subItem:last-child {
+  border-bottom: 1px solid var(--color-02);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
 .btn {
   max-width: 138px;
   margin: 0 auto;
+  transition: all 0.5s ease-in-out;
 }
 
 @media screen and (max-width: 1280px) {
@@ -46,6 +115,14 @@
 }
 
 @media screen and (max-width: 800px) {
+  .list {
+    overflow: hidden;
+  }
+
+  .item {
+    min-width: 200px;
+  }
+
   .question {
     font-size: 50px;
     line-height: 56px;
