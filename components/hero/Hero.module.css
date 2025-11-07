@@ -7,18 +7,21 @@
 }
 
 .title {
+  margin-left: 60px;
   font-family: var(--font-crimson-text);
   font-size: 156px;
   line-height: 140px;
+  letter-spacing: -6px;
   color: var(--foreground);
 }
 
 .image {
   position: absolute;
   z-index: 10;
-  bottom: -112px;
+  bottom: -137px;
   left: 50%;
   transform: translateX(-50%);
+  object-fit: none;
 }
 
 .background {

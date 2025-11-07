@@ -1,15 +1,15 @@
 .benefits {
-  padding-top: 80px;
-  padding-bottom: 120px;
+  padding-top: 77px;
+  padding-bottom: 113px;
   border-top: 1px solid var(--color-02);
 }
 
 .header {
-  margin-bottom: 50px;
+  margin-bottom: 88px;
 }
 
 .heading {
-  margin-bottom: 50px;
+  margin-bottom: 45px;
   font-family: var(--font-roboto-mono);
   font-size: 12px;
   line-height: 18px;
@@ -17,10 +17,11 @@
 }
 
 .slogan {
-  margin-bottom: 50px;
+  margin-bottom: 46px;
   font-family: var(--font-crimson-text);
   font-size: 60px;
   line-height: 66px;
+  letter-spacing: -2px;
   color: var(--foreground);
 }
 
@@ -45,8 +46,8 @@
 }
 
 .item h3 {
-  margin-top: 24px;
-  margin-bottom: 20px;
+  margin-top: 14px;
+  margin-bottom: 18px;
   font-family: var(--font-crimson-text);
   font-size: 18px;
   line-height: 24px;
@@ -54,6 +55,7 @@
 }
 
 .item p {
+  max-width: 265px;
   font-family: var(--font-dm-sans);
   font-size: 15px;
   line-height: 21px;
