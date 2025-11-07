@@ -1,12 +1,6 @@
 .testimonials {
-  height: 790px;
-  padding-bottom: 120px;
-  /* background-color: palegreen; */
+  padding-bottom: 118px;
 }
-
-/* .carousel {
-  background-color: paleturquoise;
-} */
 
 .slide {
   display: flex;
@@ -24,10 +18,11 @@
 }
 
 .text {
+  margin-top: -9px;
   margin-bottom: 50px;
   font-family: var(--font-crimson-text);
   font-size: 40px;
-  line-height: 46px;
+  line-height: 42px;
   letter-spacing: -1px;
   color: var(--foreground);
 }

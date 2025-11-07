@@ -1,6 +1,6 @@
 .spec {
-  padding-top: 80px;
-  padding-bottom: 120px;
+  padding-top: 73px;
+  padding-bottom: 126px;
 }
 
 .heading {
@@ -10,7 +10,7 @@
 }
 
 .title {
-  margin-bottom: 40px;
+  margin-bottom: 32px;
   font-family: var(--font-roboto-mono);
   font-size: 15px;
   line-height: 21px;
@@ -19,16 +19,17 @@
 }
 
 .question {
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   font-family: var(--font-crimson-text);
   font-size: 60px;
   line-height: 66px;
   text-align: center;
+  letter-spacing: -2px;
   color: var(--foreground);
 }
 
 .paragraph {
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   text-align: center;
   color: var(--color-06);
 }
@@ -40,7 +41,7 @@
 
 .top {
   padding-top: 40px;
-  padding-bottom: 30px;
+  padding-bottom: 25px;
   font-size: 23px;
   line-height: 30px;
   text-align: center;
@@ -79,7 +80,7 @@
   margin: 0;
   padding: 0;
   padding-bottom: 32px;
-  padding-top: 32px;
+  padding-top: 28px;
   padding-left: 30px;
   font-family: var(--font-roboto-mono);
   font-size: 12px;
@@ -103,6 +104,7 @@
 
 .btn {
   max-width: 138px;
+  max-height: 38px;
   margin: 0 auto;
   transition: all 0.5s ease-in-out;
 }
