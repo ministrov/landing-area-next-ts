@@ -38,13 +38,16 @@
   }
 
   .title {
+    margin-left: 0;
     font-size: 140px;
-    line-height: 120px;
+    line-height: 112px;
+    letter-spacing: -6px;
     text-align: center;
   }
 
   .image {
-    bottom: -12px;
+    bottom: -6px;
+    object-fit: cover;
   }
 }
 

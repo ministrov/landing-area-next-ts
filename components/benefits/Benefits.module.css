@@ -63,8 +63,28 @@
 }
 
 @media screen and (max-width: 1280px) {
+  .header {
+    margin-bottom: 89px;
+  }
+
+  .heading {
+    margin-bottom: 48px;
+    letter-spacing: -1px;
+  }
+
+  .slogan {
+    max-width: 450px;
+    margin-bottom: 48px;
+    line-height: 56px;
+  }
+
   .list {
     grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 80px;
+  }
+
+  .item {
+    padding-bottom: 19px;
   }
 
   .image {
