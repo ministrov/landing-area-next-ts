@@ -95,8 +95,25 @@
 }
 
 @media screen and (max-width: 800px) {
+  .features {
+    padding-bottom: 74px;
+  }
+
+  .text {
+    padding-top: 58px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 60px;
+  }
+
   .title {
-    font-size: 50px;
-    line-height: 56px;
+    margin-bottom: 34px;
+    font-size: 52px;
+    line-height: 48px;
+  }
+
+  .wrapperImage {
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
