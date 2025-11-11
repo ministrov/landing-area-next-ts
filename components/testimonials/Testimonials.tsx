@@ -33,8 +33,11 @@ export const Testimonials = () => {
           <Image className={styles.image} src={image} width={590} height={670} alt={author} />
           <div className={styles.textContent}>
             <p className={styles.text}>{text}</p>
-            <p className={styles.author}>{author}</p>
-            <p className={styles.role}>{role}</p>
+
+            <div className={styles.authorBox}>
+              <p className={styles.author}>{author}</p>
+              <p className={styles.role}>{role}</p>
+            </div>
           </div>
         </div>
       </div>
