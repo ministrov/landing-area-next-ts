@@ -93,7 +93,32 @@
 }
 
 @media screen and (max-width: 800px) {
+  .benefits {
+    padding-bottom: 97px;
+  }
+
+  .heading {
+    margin-bottom: 28px;
+  }
+
+  .slogan {
+    margin-bottom: 28px;
+  }
+
+  .item h3 {
+    margin-top: 15px;
+    margin-bottom: 19px;
+    font-size: 17px;
+    letter-spacing: 0px;
+    line-height: 22px;
+  }
+
+  .item p {
+    max-width: 100%;
+  }
+
   .list {
     grid-template-columns: 1fr;
+    gap: 38px;
   }
 }

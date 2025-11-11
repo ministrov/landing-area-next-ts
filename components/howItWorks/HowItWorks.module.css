@@ -62,9 +62,29 @@
 }
 
 @media screen and (max-width: 1280px) {
+  .how {
+    padding-top: 77px;
+  }
+
+  .header {
+    margin-bottom: 75px;
+  }
+
   .title {
     font-size: 54px;
     line-height: 60px;
+  }
+
+  .list {
+    column-gap: 58px;
+  }
+
+  .item {
+    padding-right: 0px;
+  }
+
+  .item p {
+    letter-spacing: -1px;
   }
 
   .item:nth-child(2) span {
