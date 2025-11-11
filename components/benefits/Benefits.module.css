@@ -93,6 +93,13 @@
 }
 
 @media screen and (max-width: 800px) {
+  .heading {
+    margin-bottom: 28px;
+  }
+
+  .slogan {
+    margin-bottom: 28px;
+  }
   .list {
     grid-template-columns: 1fr;
   }

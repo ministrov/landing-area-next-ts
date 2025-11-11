@@ -55,15 +55,20 @@
   .hero {
     gap: 20px;
     padding-top: 42px;
-    height: 626px;
+    height: 654px;
   }
 
   .title {
-    font-size: 76px;
-    line-height: 70px;
+    font-size: 81px;
+    line-height: 64px;
+    letter-spacing: -5px;
   }
 
   .image {
-    bottom: -102px;
+    bottom: -120px;
+  }
+
+  .background {
+    height: 363px;
   }
 }

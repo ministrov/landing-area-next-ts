@@ -43,3 +43,13 @@
     height: 42px;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .partners {
+    padding-bottom: 43px;
+  }
+
+  .partnerItem {
+    padding: 18px 20px;
+  }
+}
