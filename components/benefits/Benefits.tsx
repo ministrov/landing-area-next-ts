@@ -18,20 +18,6 @@ export const Benefits = () => {
     );
   }
 
-  // let src = '/benefits-image-desktop.jpg';
-  // let width = 1200;
-  // let height = 620;
-
-  // if (windowWidth <= 800) {
-  //   src = '/benefits-image-mobile.jpg';
-  //   width = 343;
-  //   height = 600;
-  // } else if (windowWidth <= 1280) {
-  //   src = '/benefits-image-tablet.jpg';
-  //   width = 700;
-  //   height = 600;
-  // }
-
   let src, width, height;
 
   if (windowWidth > 1280) {

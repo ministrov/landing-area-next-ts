@@ -22,15 +22,15 @@ export const Hero = () => {
 
   if (windowWidth > 1280) {
     src = '/hero-desktop.png';
-    width = 907;
-    height = 644;
+    width = 947;
+    height = 674;
   } else if (windowWidth > 800) {
     src = '/hero-tablet.png';
-    width = 676;
-    height = 422;
+    width = 706;
+    height = 452;
   } else {
     src = '/hero-mobile.png';
-    width = 270;
+    width = 290;
     height = 541;
   }
 
