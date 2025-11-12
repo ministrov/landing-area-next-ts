@@ -94,5 +94,13 @@
 
   .image {
     height: 343px;
+    border-radius: 30px;
+  }
+
+  .text {
+    margin-top: 0px;
+    margin-bottom: 49px;
+    font-size: 32px;
+    line-height: 35px;
   }
 }
