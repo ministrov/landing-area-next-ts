@@ -8,6 +8,16 @@ import styles from './Features.module.css';
 export const Features = () => {
   const windowWidth = useWindowWidth();
 
+  if (windowWidth === null) {
+    return (
+      <section className={styles.hero}>
+        <h2 className={styles.title}>Browse everything.</h2>
+        <div className={styles.imagePlaceholder}></div>
+        <div className={styles.background}></div>
+      </section>
+    );
+  }
+
   let src = '/features-desktop.png';
   let width = 590;
   let height = 711;
