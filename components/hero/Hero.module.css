@@ -18,9 +18,9 @@
 .image {
   z-index: 10;
   position: absolute;
-  bottom: -151px;
   left: 50%;
   transform: translateX(-50%);
+  bottom: -151px;
   object-fit: cover;
 }
 
