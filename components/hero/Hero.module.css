@@ -16,12 +16,12 @@
 }
 
 .image {
-  position: absolute;
   z-index: 10;
-  bottom: -137px;
+  position: absolute;
+  bottom: -156px;
   left: 50%;
   transform: translateX(-50%);
-  object-fit: none;
+  object-fit: cover;
 }
 
 .background {
@@ -47,7 +47,6 @@
 
   .image {
     bottom: -6px;
-    object-fit: cover;
   }
 }
 

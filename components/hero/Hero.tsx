@@ -7,6 +7,8 @@ import styles from './Hero.module.css';
 export const Hero = () => {
   const windowWidth = useWindowWidth();
 
+  console.log(windowWidth);
+
   // Пока не знаем ширину - не рендерим изображение или рендерим плейсхолдер
   if (windowWidth === null) {
     return (
