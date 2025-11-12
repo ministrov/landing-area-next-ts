@@ -17,11 +17,11 @@
 
 .image {
   z-index: 10;
-  object-fit: cover;
   position: absolute;
-  bottom: -137px;
+  bottom: -151px;
   left: 50%;
   transform: translateX(-50%);
+  object-fit: cover;
 }
 
 .background {
@@ -46,7 +46,7 @@
   }
 
   .image {
-    bottom: 2px;
+    bottom: -12px;
   }
 }
 
@@ -64,7 +64,7 @@
   }
 
   .image {
-    bottom: -120px;
+    bottom: -127px;
   }
 
   .background {
