@@ -1,3 +1,10 @@
 .up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
   background-color: turquoise;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
 }
