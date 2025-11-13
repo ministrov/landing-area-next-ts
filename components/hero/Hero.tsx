@@ -11,15 +11,32 @@ export const Hero = () => {
   const imageVariants = {
     hidden: {
       opacity: 0,
+      y: 100, // начинается ниже своей позиции
     },
     visible: {
       opacity: 1,
+      y: 0, // поднимается на свою позицию
       transition: {
         duration: 0.6,
         delay: 0.6
       }
     }
   };
+
+  // const imageVariants = {
+  //   hidden: {
+  //     opacity: 0,
+  //     x: -100, // выезд слева
+  //   },
+  //   visible: {
+  //     opacity: 1,
+  //     x: 0,
+  //     transition: {
+  //       duration: 0.6,
+  //       delay: 0.6
+  //     }
+  //   }
+  // };
 
   const backgroundVariants = {
     hidden: {
