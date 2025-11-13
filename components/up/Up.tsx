@@ -4,7 +4,7 @@ import styles from './Up.module.css';
 export const Up = () => {
   return (
     <div className={styles.up}>
-      <Image src={'/up.svg'} width={10} height={10} alt={''} />
+      <Image src={'/up.svg'} width={15} height={15} alt={''} />
     </div>
   )
 }
