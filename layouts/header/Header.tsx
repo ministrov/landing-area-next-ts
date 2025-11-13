@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 'use client';
 
 import Link from 'next/link';
@@ -16,16 +17,15 @@ export const Header = () => {
   const pathname = usePathname();
   // Закрываем меню при клике на любую ссылку
   const handleLinkClick = () => {
-    if (isOpen) {
-      setIsOpen(false);
-    }
+    setIsOpen(false);
   };
 
   useEffect(() => {
     // Закрываем меню при изменении пути
-    // eslint-disable-next-line react-hooks/set-state-in-effect
-    setIsOpen(false);
-  }, [pathname]); // ← срабатывает при изменении pathname
+    if (isOpen) {
+      setIsOpen(false);
+    }
+  }, [pathname]);
 
   return (
     <header className={styles.header}>
@@ -59,14 +59,14 @@ export const Header = () => {
           <motion.div
             key="mobile-menu"
             initial={{ opacity: 0, height: 0 }}
-            // animate={{ opacity: 1, height: "auto" }}
             animate={{ opacity: 1, height: "522px" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{
               type: "spring",
-              stiffness: 300,
-              damping: 30,
-              duration: 0.5
+              stiffness: 100,    // ↓ очень мягко
+              damping: 18,       // ↓ почти нет сопротивления  
+              mass: 0.3,         // ↓ очень легкий
+              duration: 1.2      // ↑ медленно и плавно
             }}
             style={{ overflow: 'hidden' }}
           >
