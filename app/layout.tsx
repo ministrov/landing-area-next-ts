@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Crimson_Text, DM_Sans, Roboto_Mono } from "next/font/google";
 import { Header } from '@/layouts/header/Header';
 import { Footer } from '@/layouts/footer/Footer';
+import { Up } from '@/components/up/Up';
 import "./globals.css";
 
 const crimsonText = Crimson_Text({
@@ -40,6 +41,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <Up />
       </body>
     </html>
   );

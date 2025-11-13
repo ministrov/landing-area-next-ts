@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { Button } from '../burtton/Button';
+import how from '../../public/how-desktop.png';
 import styles from './HowItWorks.module.css';
 
 export const HowItWorks = () => {
@@ -29,7 +30,7 @@ export const HowItWorks = () => {
         </li>
       </ul>
 
-      <Image className={styles.image} src={'/how-desktop.png'} width={1200} height={665} alt={''} />
+      <Image className={styles.image} src={how} width={1200} height={665} alt={''} />
     </section>
   )
 }

@@ -2,10 +2,41 @@
 
 import Image from 'next/image';
 import { useWindowWidth } from '@/hooks/useWindowWidth';
+import { motion } from 'framer-motion';
 import styles from './Hero.module.css';
 
 export const Hero = () => {
   const windowWidth = useWindowWidth();
+
+  const imageVariants = {
+    hidden: {
+      opacity: 0,
+      y: 100, // начинается ниже своей позиции
+    },
+    visible: {
+      opacity: 1,
+      y: 0, // поднимается на свою позицию
+      transition: {
+        duration: 0.6,
+        delay: 0.6
+      }
+    }
+  };
+
+  const backgroundVariants = {
+    hidden: {
+      opacity: 0,
+      scale: 0.95
+    },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        duration: 0.8,
+        delay: 0.3
+      }
+    }
+  };
 
   // Пока не знаем ширину - не рендерим изображение или рендерим плейсхолдер
   if (windowWidth === null) {
@@ -37,8 +68,33 @@ export const Hero = () => {
   return (
     <section className={styles.hero}>
       <h2 className={styles.title}>Browse everything.</h2>
-      <Image className={styles.image} src={src} width={width} height={height} alt={''} priority />
-      <div className={styles.background}></div>
+
+      <motion.div
+        key="image-container"
+        variants={imageVariants}
+        initial="hidden"
+        animate="visible"
+        className={styles.imageContainer}
+      >
+
+        <Image
+          className={styles.image}
+          src={src}
+          width={width}
+          height={height}
+          alt={''}
+          priority
+        />
+
+      </motion.div>
+
+      <motion.div
+        key="background"
+        variants={backgroundVariants}
+        initial="hidden"
+        animate="visible"
+        className={styles.background}
+      />
     </section>
   )
 }
