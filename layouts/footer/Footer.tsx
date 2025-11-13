@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { NavGroup } from '@/components/navGroup/NavGroup';
 import { footerLinks } from '@/helpers';
+import logo from '../../public/footer-logo.svg';
 import styles from "./Footer.module.css";
 
 export const Footer = () => {
@@ -12,7 +13,7 @@ export const Footer = () => {
             <NavGroup links={footerLinks} className={styles.list} />
           </div>
           <div className={styles.bottom}>
-            <Image src={'/footer-logo.svg'} width={32} height={70} alt={''} />
+            <Image src={logo} width={32} height={70} alt={''} />
 
             <div className={styles.copyright}>
               <span>© Area.</span>
