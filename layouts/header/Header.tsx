@@ -1,7 +1,9 @@
 'use client';
 
 import Link from 'next/link';
-import { useState } from 'react';
+import { usePathname } from 'next/navigation';
+import { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Squash as Hamburger } from 'hamburger-react';
 import { NavGroup } from '@/components/navGroup/NavGroup';
 import { Button } from '@/components/burtton/Button';
@@ -11,6 +13,19 @@ import styles from "./Header.module.css";
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  const pathname = usePathname();
+  // Закрываем меню при клике на любую ссылку
+  const handleLinkClick = () => {
+    if (isOpen) {
+      setIsOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    // Закрываем меню при изменении пути
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setIsOpen(false);
+  }, [pathname]); // ← срабатывает при изменении pathname
 
   return (
     <header className={styles.header}>
@@ -39,9 +54,26 @@ export const Header = () => {
           </button>
         </div>
       </div>
-      {isOpen && (
-        <NavMobile />
-      )}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            key="mobile-menu"
+            initial={{ opacity: 0, height: 0 }}
+            // animate={{ opacity: 1, height: "auto" }}
+            animate={{ opacity: 1, height: "522px" }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{
+              type: "spring",
+              stiffness: 300,
+              damping: 30,
+              duration: 0.5
+            }}
+            style={{ overflow: 'hidden' }}
+          >
+            <NavMobile onLinkClick={handleLinkClick} />
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   )
 }
