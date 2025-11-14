@@ -82,9 +82,13 @@
     padding-bottom: 49px;
   }
 
+  .wrapperImage {
+    max-height: 744px;
+  }
+
   .wrapperImage img {
     width: 100%;
-    height: auto;
+    height: 744px;
   }
 
   .list {
@@ -121,5 +125,9 @@
   .wrapperImage {
     padding-left: 16px;
     padding-right: 16px;
+  }
+
+  .wrapperImage img {
+    height: 386px;
   }
 }
