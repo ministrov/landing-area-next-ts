@@ -5,7 +5,7 @@ import styles from './HowItWorks.module.css';
 
 export const HowItWorks = () => {
   return (
-    <section id='howTo' className={styles.how}>
+    <div className={styles.how}>
       <header className={styles.header}>
         <h2 className={styles.title}>Map Your Success</h2>
 
@@ -31,6 +31,6 @@ export const HowItWorks = () => {
       </ul>
 
       <Image className={styles.image} src={how} width={1200} height={665} alt={''} />
-    </section>
+    </div>
   )
 }

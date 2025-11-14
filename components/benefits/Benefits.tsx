@@ -34,7 +34,7 @@ export const Benefits = () => {
     height = 600;
   }
   return (
-    <section id='benefits' className={styles.benefits}>
+    <div className={styles.benefits}>
       <header className={styles.header}>
         <h2 className={styles.heading}>Benefits</h2>
         <p className={styles.slogan}>We’ve cracked the code.</p>
@@ -65,6 +65,6 @@ export const Benefits = () => {
       </ul>
 
       <Image className={styles.image} src={src} width={width} height={height} alt="" />
-    </section>
+    </div>
   )
 }

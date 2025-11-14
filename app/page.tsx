@@ -12,12 +12,20 @@ export default function Home() {
     <div className='container'>
       <Hero />
       <Partners />
-      <Benefits />
+      <section id='benefits'>
+        <Benefits />
+      </section>
       <Features />
-      <Specification />
+      <section id='specifications'>
+        <Specification />
+      </section>
       <Testimonials />
-      <HowItWorks />
-      <ConnectUs />
+      <section id='howTo'>
+        <HowItWorks />
+      </section>
+      <section id='contactUs'>
+        <ConnectUs />
+      </section>
     </div>
   );
 }
