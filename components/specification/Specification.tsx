@@ -6,7 +6,7 @@ import styles from './Specification.module.css';
 
 export const Specification = () => {
   return (
-    <section className={styles.spec}>
+    <div className={styles.spec}>
       <div className={styles.heading}>
         <h2 className={styles.title}>Specs</h2>
         <p className={styles.question}>Why Choose Area?</p>
@@ -126,6 +126,6 @@ export const Specification = () => {
           </ul>
         </li>
       </ul>
-    </section>
+    </div>
   )
 }

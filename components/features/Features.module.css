@@ -50,7 +50,12 @@
   max-width: 460px;
 }
 
+.wrapperImage {
+  max-height: 711px;
+}
+
 .wrapperImage img {
+  height: 711px;
   object-fit: cover;
   border-radius: 30px;
 }
@@ -77,8 +82,13 @@
     padding-bottom: 49px;
   }
 
+  .wrapperImage {
+    max-height: 744px;
+  }
+
   .wrapperImage img {
     width: 100%;
+    height: 744px;
   }
 
   .list {
@@ -115,5 +125,9 @@
   .wrapperImage {
     padding-left: 16px;
     padding-right: 16px;
+  }
+
+  .wrapperImage img {
+    height: 386px;
   }
 }

@@ -63,10 +63,10 @@ export const Header = () => {
             exit={{ opacity: 0, height: 0 }}
             transition={{
               type: "spring",
-              stiffness: 100,    // ↓ очень мягко
-              damping: 18,       // ↓ почти нет сопротивления  
-              mass: 0.3,         // ↓ очень легкий
-              duration: 1.2      // ↑ медленно и плавно
+              stiffness: 100,
+              damping: 18,
+              mass: 0.3,
+              duration: 1.2
             }}
             style={{ overflow: 'hidden' }}
           >
