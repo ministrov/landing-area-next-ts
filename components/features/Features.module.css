@@ -50,7 +50,12 @@
   max-width: 460px;
 }
 
+.wrapperImage {
+  max-height: 711px;
+}
+
 .wrapperImage img {
+  height: 711px;
   object-fit: cover;
   border-radius: 30px;
 }
@@ -79,6 +84,7 @@
 
   .wrapperImage img {
     width: 100%;
+    height: auto;
   }
 
   .list {
