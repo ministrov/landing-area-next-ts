@@ -34,7 +34,7 @@ export const Benefits = () => {
     height = 600;
   }
   return (
-    <section className={styles.benefits}>
+    <section id='benefits' className={styles.benefits}>
       <header className={styles.header}>
         <h2 className={styles.heading}>Benefits</h2>
         <p className={styles.slogan}>We’ve cracked the code.</p>

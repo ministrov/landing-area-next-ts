@@ -5,7 +5,7 @@ import styles from './HowItWorks.module.css';
 
 export const HowItWorks = () => {
   return (
-    <section className={styles.how}>
+    <section id='howTo' className={styles.how}>
       <header className={styles.header}>
         <h2 className={styles.title}>Map Your Success</h2>
 
