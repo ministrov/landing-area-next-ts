@@ -6,16 +6,6 @@ import { Specification } from '@/components/specification/Specification';
 import { Testimonials } from '@/components/testimonials/Testimonials';
 import { HowItWorks } from '@/components/howItWorks/HowItWorks';
 import { ConnectUs } from '@/components/connectUs/ConnectUs';
-import { bubbleSort } from '@/helpers/callbacks';
-// import { removeNeg, numbers } from '@/helpers/callbacks';
-
-// const posNumbers = removeNeg(numbers, (x: number) => x >= 0);
-
-// console.log(posNumbers);
-
-const numbers: number[] = [5, 2, 4, 1];
-
-console.log(bubbleSort(numbers));
 
 export default function Home() {
   return (
