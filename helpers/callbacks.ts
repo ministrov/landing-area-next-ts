@@ -12,12 +12,21 @@ export function removeNeg(array: number[], callback: (x: number) => boolean) {
   return myArray;
 }
 
-export function bubleSort(arr: number[]): void {
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[0] > arr[1]) {
-      const temp = arr[0];
-      arr[0] = arr[1];
-      arr[1] = temp;
+export function bubbleSort(arr: number[]) {
+  const n = arr.length - 1;
+
+  console.log(n);
+
+  for (let pass = 0; pass < n; pass++) {
+    for (let i = 0; i < n - pass; i++) {
+      if (arr[i] > arr[i + 1]) {
+        // eslint-disable-next-line prefer-const
+        let temp = arr[i];
+        arr[i] = arr[i + 1];
+        arr[i + 1] = temp;
+      }
     }
   }
+
+  return arr;
 }
