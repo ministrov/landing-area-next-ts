@@ -85,12 +85,8 @@ export const Hero = () => {
           alt={'Showcasing the application effeciency'}
           priority
           fetchPriority="high"
-          // Убедитесь, что нет lazy loading для LCP-изображения
           loading="eager"
-          // Оптимизация качества и формата
           quality={85}
-        // Если используете WebP, добавьте соответствующие файлы
-        // placeholder="blur" // раскомментируйте если добавите blurDataURL
         />
 
       </motion.div>
