@@ -29,8 +29,16 @@ export const Up = () => {
       initial={{ opacity: 0 }}
       className={styles.up}
       onClick={scrollToTop}
+      aria-label="Scroll to top"
+      title="Scroll to top"
     >
-      <Image src={up} width={15} height={15} alt={''} />
+      <Image
+        src={up}
+        width={15}
+        height={15}
+        alt={''}
+        aria-hidden="true"
+      />
     </motion.button>
   )
 }
