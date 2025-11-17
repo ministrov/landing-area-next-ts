@@ -67,7 +67,19 @@ export const Hero = () => {
 
   return (
     <section className={styles.hero}>
-      <h2 className={styles.title}>Browse everything.</h2>
+      <motion.h2
+        initial={{ x: -500, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{
+          type: "spring",
+          stiffness: 40,
+          damping: 15,
+          delay: 0.2 // небольшая задержка относительно фона
+        }}
+        className={styles.title}
+      >
+        Browse everything.
+      </motion.h2>
 
       <motion.div
         key="image-container"
@@ -82,8 +94,11 @@ export const Hero = () => {
           src={src}
           width={width}
           height={height}
-          alt={''}
+          alt={'Showcasing the application effeciency'}
           priority
+          fetchPriority="high"
+          loading="eager"
+          quality={85}
         />
 
       </motion.div>

@@ -9,12 +9,12 @@ import styles from "./NavGroup.module.css";
 export const NavGroup = ({ links, className }: NavGroupProps) => {
   const { scrollToSection } = useSmoothScroll();
 
-  // console.log(scrollToSection);
-
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    // console.log(href);
     if (href.startsWith('#')) {
       e.preventDefault();
       const sectionId = href.substring(1); // Убираем # из начала
+      // console.log(sectionId);
       scrollToSection(sectionId);
     }
   };
