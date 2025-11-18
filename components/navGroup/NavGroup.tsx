@@ -10,11 +10,9 @@ export const NavGroup = ({ links, className }: NavGroupProps) => {
   const { scrollToSection } = useSmoothScroll();
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    // console.log(href);
     if (href.startsWith('#')) {
       e.preventDefault();
-      const sectionId = href.substring(1); // Убираем # из начала
-      // console.log(sectionId);
+      const sectionId = href.substring(1);
       scrollToSection(sectionId);
     }
   };

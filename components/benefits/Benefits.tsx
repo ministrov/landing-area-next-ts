@@ -7,7 +7,6 @@ import styles from './Benefits.module.css';
 export const Benefits = () => {
   const windowWidth = useWindowWidth();
 
-  // Пока не знаем ширину - не рендерим изображение или рендерим плейсхолдер
   if (windowWidth === null) {
     return (
       <section className={styles.hero}>

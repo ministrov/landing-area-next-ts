@@ -11,11 +11,11 @@ export const Hero = () => {
   const imageVariants = {
     hidden: {
       opacity: 0,
-      y: 100, // начинается ниже своей позиции
+      y: 100,
     },
     visible: {
       opacity: 1,
-      y: 0, // поднимается на свою позицию
+      y: 0,
       transition: {
         duration: 0.6,
         delay: 0.6
@@ -38,7 +38,6 @@ export const Hero = () => {
     }
   };
 
-  // Пока не знаем ширину - не рендерим изображение или рендерим плейсхолдер
   if (windowWidth === null) {
     return (
       <section className={styles.hero}>
@@ -74,7 +73,7 @@ export const Hero = () => {
           type: "spring",
           stiffness: 40,
           damping: 15,
-          delay: 0.2 // небольшая задержка относительно фона
+          delay: 0.2
         }}
         className={styles.title}
       >
