@@ -1,19 +1,11 @@
 'use client';
 
-// import { useRef, useEffect } from 'react';
 import Image from 'next/image';
 import { useWindowWidth } from '@/hooks/useWindowWidth';
 import styles from './Benefits.module.css';
 
 export const Benefits = () => {
   const windowWidth = useWindowWidth();
-  // const listRef = useRef(null);
-
-  // useEffect(() => {
-  //   console.log(listRef);
-  //   console.log(listRef.current);
-  //   console.log(windowWidth);
-  // }, [windowWidth]);
 
   if (windowWidth === null) {
     return (
