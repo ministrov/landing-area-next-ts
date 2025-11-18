@@ -15,8 +15,6 @@ export function removeNeg(array: number[], callback: (x: number) => boolean) {
 export function bubbleSort(arr: number[]) {
   const n = arr.length - 1;
 
-  console.log(n);
-
   for (let pass = 0; pass < n; pass++) {
     for (let i = 0; i < n - pass; i++) {
       if (arr[i] > arr[i + 1]) {

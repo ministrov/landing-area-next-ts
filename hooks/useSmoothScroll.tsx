@@ -5,7 +5,7 @@ export const useSmoothScroll = () => {
     const element = document.getElementById(sectionId);
 
     if (element) {
-      const headerHeight = 148; // Высота вашего хедера
+      const headerHeight = 148;
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
 

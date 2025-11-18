@@ -15,13 +15,12 @@ import styles from "./Header.module.css";
 export const Header = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const pathname = usePathname();
-  // Закрываем меню при клике на любую ссылку
+
   const handleLinkClick = () => {
     setIsOpen(false);
   };
 
   useEffect(() => {
-    // Закрываем меню при изменении пути
     if (isOpen) {
       setIsOpen(false);
     }
