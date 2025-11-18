@@ -1,18 +1,19 @@
 'use client';
 
-import { useRef, useEffect } from 'react';
+// import { useRef, useEffect } from 'react';
 import Image from 'next/image';
 import { useWindowWidth } from '@/hooks/useWindowWidth';
 import styles from './Benefits.module.css';
 
 export const Benefits = () => {
   const windowWidth = useWindowWidth();
-  const listRef = useRef(null);
+  // const listRef = useRef(null);
 
-  useEffect(() => {
-    console.log(listRef);
-    console.log(listRef.current);
-  }, []);
+  // useEffect(() => {
+  //   console.log(listRef);
+  //   console.log(listRef.current);
+  //   console.log(windowWidth);
+  // }, [windowWidth]);
 
   if (windowWidth === null) {
     return (
@@ -47,7 +48,7 @@ export const Benefits = () => {
         <p className={styles.insights}>Area provides real insights, without the data overload.</p>
       </header>
 
-      <ul ref={listRef} className={styles.list}>
+      <ul className={styles.list}>
         <li className={styles.item}>
           <Image src={'/benefits-insights.svg'} width={24} height={24} alt={''} />
           <h3>Amplify Insights</h3>
