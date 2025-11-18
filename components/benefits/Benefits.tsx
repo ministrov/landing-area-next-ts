@@ -1,11 +1,18 @@
 'use client';
 
+import { useRef, useEffect } from 'react';
 import Image from 'next/image';
 import { useWindowWidth } from '@/hooks/useWindowWidth';
 import styles from './Benefits.module.css';
 
 export const Benefits = () => {
   const windowWidth = useWindowWidth();
+  const listRef = useRef(null);
+
+  useEffect(() => {
+    console.log(listRef);
+    console.log(listRef.current);
+  }, []);
 
   if (windowWidth === null) {
     return (
@@ -40,7 +47,7 @@ export const Benefits = () => {
         <p className={styles.insights}>Area provides real insights, without the data overload.</p>
       </header>
 
-      <ul className={styles.list}>
+      <ul ref={listRef} className={styles.list}>
         <li className={styles.item}>
           <Image src={'/benefits-insights.svg'} width={24} height={24} alt={''} />
           <h3>Amplify Insights</h3>
