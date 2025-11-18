@@ -43,11 +43,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <meta name="robots" content="index, follow" />
-        <meta name="googlebot" content="index, follow" />
-        {/* остальные мета-теги... */}
-      </head>
       <body className={`${crimsonText.variable} ${dmSans.variable} ${robotoMono.variable}`}>
         <Header />
         <main>
